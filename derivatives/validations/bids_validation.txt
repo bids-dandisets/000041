@@ -2,7 +2,7 @@
 		SourceDatasets
 		/dataset_description.json - Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).
 Valid keys in each object include `"URL"`, `"DOI"` (see
-[URI](https://bids-specification.readthedocs.io/en/stable/common-principles.md#uniform-resource-indicator)), and
+[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and
 `"Version"` with
 [string](https://www.w3schools.com/js/js_json_datatypes.asp)
 values.
@@ -263,11 +263,11 @@ For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond t
 		20 more files with the same issue
 
 		CogAtlasID
-		/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.nwb - Field description: [URI](https://bids-specification.readthedocs.io/en/stable/common-principles.md#uniform-resource-indicator)
+		/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
 of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
 Task term.
 
-		/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.nwb - Field description: [URI](https://bids-specification.readthedocs.io/en/stable/common-principles.md#uniform-resource-indicator)
+		/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
 of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
 Task term.
 
@@ -275,10 +275,10 @@ Task term.
 		20 more files with the same issue
 
 		CogPOID
-		/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.nwb - Field description: [URI](https://bids-specification.readthedocs.io/en/stable/common-principles.md#uniform-resource-indicator)
+		/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
 of the corresponding [CogPO](http://www.cogpo.org/) term.
 
-		/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.nwb - Field description: [URI](https://bids-specification.readthedocs.io/en/stable/common-principles.md#uniform-resource-indicator)
+		/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
 of the corresponding [CogPO](http://www.cogpo.org/) term.
 
 
@@ -308,3 +308,4 @@ regardless of their type (for example, `2400`).
           243 Files, 326 kB                                          microephys           
           10 - Subjects 22 - Sessions                                                     
 
+	If you have any questions, please post on https://neurostars.org/tags/bids.
