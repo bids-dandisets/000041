@@ -6,24 +6,48 @@ Valid keys in each object include `"URL"`, `"DOI"` (see
 `"Version"` with
 [string](https://www.w3schools.com/js/js_json_datatypes.asp)
 values.
-
+ - rules.dataset_metadata.dataset_description
 
 	Please visit https://neurostars.org/search?q=JSON_KEY_RECOMMENDED for existing conversations about this issue.
 
 	[ERROR] TSV_VALUE_INCORRECT_TYPE A value in a column did not match the acceptable type for that column headers specified format.
 		session_id
-		/sub-Splinter/sub-Splinter_sessions.tsv - 'ses-Splinter_020515'
-		/sub-BWRat19/sub-BWRat19_sessions.tsv - 'ses-BWRat19_032413'
-
-		8 more files with the same issue
+		/sub-Splinter/sub-Splinter_sessions.tsv - 'ses-Splinter_020515' - rules.tabular_data.modality_agnostic.Sessions
+		/sub-BWRat19/sub-BWRat19_sessions.tsv - 'ses-BWRat19_032413' - rules.tabular_data.modality_agnostic.Sessions
+		/sub-BWRat18/sub-BWRat18_sessions.tsv - 'ses-BWRat18_020513' - rules.tabular_data.modality_agnostic.Sessions
+		/sub-BWRat21/sub-BWRat21_sessions.tsv - 'ses-BWRat21_121113' - rules.tabular_data.modality_agnostic.Sessions
+		/sub-Rizzo/sub-Rizzo_sessions.tsv - 'ses-Rizzo_022615' - rules.tabular_data.modality_agnostic.Sessions
+		/sub-Bogey/sub-Bogey_sessions.tsv - 'ses-Bogey_012615' - rules.tabular_data.modality_agnostic.Sessions
+		/sub-BWRat20/sub-BWRat20_sessions.tsv - 'ses-BWRat20_101013' - rules.tabular_data.modality_agnostic.Sessions
+		/sub-Dino/sub-Dino_sessions.tsv - 'ses-Dino_061814' - rules.tabular_data.modality_agnostic.Sessions
+		/sub-Templeton/sub-Templeton_sessions.tsv - 'ses-Templeton_032415' - rules.tabular_data.modality_agnostic.Sessions
+		/sub-BWRat17/sub-BWRat17_sessions.tsv - 'ses-BWRat17_121712' - rules.tabular_data.modality_agnostic.Sessions
 
 	Please visit https://neurostars.org/search?q=TSV_VALUE_INCORRECT_TYPE for existing conversations about this issue.
 
 	[ERROR] NOT_INCLUDED Files with such naming scheme are not part of BIDS specification. This error is most commonly caused by typos in file names that make them not BIDS compatible. Please consult the specification and make sure your files are named correctly. If this is not a file naming issue (for example when including files not yet covered by the BIDS specification) you should include a ".bidsignore" file in your dataset (see https://github.com/bids-standard/bids-validator#bidsignore for details). Please note that derived (processed) data should be placed in /derivatives folder and source data (such as DICOMS or behavioural logs in proprietary formats) should be placed in the /sourcedata folder.
 		/sub-Splinter/ses-Splinter_020915/
 		/sub-Splinter/ses-Splinter_020515/
-
-		20 more files with the same issue
+		/sub-BWRat19/ses-BWRat19_032413/
+		/sub-BWRat19/ses-BWRat19_032513/
+		/sub-BWRat18/ses-BWRat18_020513/
+		/sub-BWRat21/ses-BWRat21_121113/
+		/sub-BWRat21/ses-BWRat21_121613/
+		/sub-BWRat21/ses-BWRat21_121813/
+		/sub-Rizzo/ses-Rizzo_022615/
+		/sub-Rizzo/ses-Rizzo_022715/
+		/sub-Bogey/ses-Bogey_012615/
+		/sub-BWRat20/ses-BWRat20_101013/
+		/sub-BWRat20/ses-BWRat20_101513/
+		/sub-Dino/ses-Dino_061814/
+		/sub-Dino/ses-Dino_072314/
+		/sub-Dino/ses-Dino_061914/
+		/sub-Dino/ses-Dino_072114/
+		/sub-Dino/ses-Dino_062014/
+		/sub-Dino/ses-Dino_072414/
+		/sub-Templeton/ses-Templeton_032415/
+		/sub-BWRat17/ses-BWRat17_121712/
+		/sub-BWRat17/ses-BWRat17_121912/
 
 	Please visit https://neurostars.org/search?q=NOT_INCLUDED for existing conversations about this issue.
 
