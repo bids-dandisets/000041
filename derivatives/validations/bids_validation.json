@@ -3,2025 +3,2025 @@
     "issues": [
       {
         "code": "UNKNOWN_BIDS_VERSION",
-        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.dataset.UnknownVersion"
+        "rule": "rules.checks.dataset.UnknownVersion",
+        "severity": "ignore"
       },
       {
         "code": "README_FILE_MISSING",
-        "severity": "ignore",
         "location": "/dataset_description.json",
-        "rule": "rules.checks.hints.ReadmeFileMissing"
+        "rule": "rules.checks.hints.ReadmeFileMissing",
+        "severity": "ignore"
       },
       {
         "code": "JSON_KEY_RECOMMENDED",
         "subCode": "SourceDatasets",
-        "severity": "warning",
         "location": "/dataset_description.json",
-        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n",
-        "rule": "rules.dataset_metadata.dataset_description"
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.json",
         "affects": [
           "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020915/ecephys/sub-Splinter_ses-Splinter+020915_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.json",
         "affects": [
           "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Splinter/ses-Splinter+020515/ecephys/sub-Splinter_ses-Splinter+020515_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_ecephys.json",
         "affects": [
           "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032513/ecephys/sub-BWRat19_ses-BWRat19+032513_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_ecephys.json",
         "affects": [
           "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-BWRat19/ses-BWRat19+032413/ecephys/sub-BWRat19_ses-BWRat19+032413_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_ecephys.json",
         "affects": [
           "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-BWRat18/ses-BWRat18+020513/ecephys/sub-BWRat18_ses-BWRat18+020513_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_ecephys.json",
         "affects": [
           "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-BWRat21/ses-BWRat21+121113/ecephys/sub-BWRat21_ses-BWRat21+121113_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_ecephys.json",
         "affects": [
           "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121813/ecephys/sub-BWRat21_ses-BWRat21+121813_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_ecephys.json",
         "affects": [
           "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-BWRat21/ses-BWRat21+121613/ecephys/sub-BWRat21_ses-BWRat21+121613_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_ecephys.json",
         "affects": [
           "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Rizzo/ses-Rizzo+022615/ecephys/sub-Rizzo_ses-Rizzo+022615_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_ecephys.json",
         "affects": [
           "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Rizzo/ses-Rizzo+022715/ecephys/sub-Rizzo_ses-Rizzo+022715_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_ecephys.json",
         "affects": [
           "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Bogey/ses-Bogey+012615/ecephys/sub-Bogey_ses-Bogey+012615_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_ecephys.json",
         "affects": [
           "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "impedance",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101013/ecephys/sub-BWRat20_ses-BWRat20+101013_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_ecephys.json",
         "affects": [
           "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-BWRat20/ses-BWRat20+101513/ecephys/sub-BWRat20_ses-BWRat20+101513_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_ecephys.json",
         "affects": [
           "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061914/ecephys/sub-Dino_ses-Dino+061914_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_ecephys.json",
         "affects": [
           "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+061814/ecephys/sub-Dino_ses-Dino+061814_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_ecephys.json",
         "affects": [
           "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Dino/ses-Dino+072314/ecephys/sub-Dino_ses-Dino+072314_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_ecephys.json",
         "affects": [
           "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "impedance",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072114/ecephys/sub-Dino_ses-Dino+072114_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_ecephys.json",
         "affects": [
           "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+072414/ecephys/sub-Dino_ses-Dino+072414_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_ecephys.json",
         "affects": [
           "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Dino/ses-Dino+062014/ecephys/sub-Dino_ses-Dino+062014_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_ecephys.json",
         "affects": [
           "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-Templeton/ses-Templeton+032415/ecephys/sub-Templeton_ses-Templeton+032415_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_ecephys.json",
         "affects": [
           "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121912/ecephys/sub-BWRat17_ses-BWRat17+121912_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_ecephys.nwb",
-        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
         "subCode": "SamplingFrequency",
-        "severity": "error",
-        "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_ecephys.json",
         "issueMessage": "must be number\n\nField description: Sampling frequency (in Hz) of all the data in the recording,\nregardless of their type (for example, `2400`).\n",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_ecephys.json",
         "affects": [
           "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_ecephys.nwb"
         ],
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_ecephys.nwb",
-        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingType",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_ecephys.nwb",
-        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n",
-        "rule": "rules.sidecars.microephys.microephysSetup"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_ecephys.nwb",
-        "issueMessage": "Field description: Body part of the organ / body region scanned.\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPartDetails",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_ecephys.nwb",
-        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n",
-        "rule": "rules.sidecars.microephys.microephysSample"
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
         "subCode": "y",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_electrodes.json",
-        "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
-        "subCode": "impedance",
-        "severity": "warning",
-        "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_electrodes.json",
         "issueMessage": "Format \"string\" must be number",
-        "rule": "rules.tabular_data.microephys.microephysElectrodes"
+        "subCode": "impedance",
+        "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
       },
       {
         "code": "TSV_COLUMN_MISSING",
         "subCode": "sampling_frequency",
-        "severity": "error",
         "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_channels.tsv",
         "issueMessage": "Required initial column 5 not found.",
-        "rule": "rules.tabular_data.microephys.microephysChannels"
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "StimulusPresentation",
-        "severity": "warning",
         "location": "/sub-BWRat17/ses-BWRat17+121712/ecephys/sub-BWRat17_ses-BWRat17+121712_events.tsv",
-        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n",
-        "rule": "rules.sidecars.events.StimulusPresentation"
+        "severity": "warning",
+        "rule": "rules.sidecars.events.StimulusPresentation",
+        "issueMessage": "Field description: Object containing key-value pairs related to the software used to present\nthe stimuli during the experiment.\n"
       }
     ],
     "codeMessages": {
