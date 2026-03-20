@@ -1,11 +1,11 @@
-participant_id	species
-sub-BWRat17	Rattus norvegicus domestica - Long Evans
-sub-BWRat18	Rattus norvegicus domestica - Long Evans
-sub-BWRat19	Rattus norvegicus domestica - Long Evans
-sub-BWRat20	Rattus norvegicus domestica - Long Evans
-sub-BWRat21	Rattus norvegicus domestica - Long Evans
-sub-Bogey	Rattus norvegicus domestica - Long Evans
-sub-Dino	Rattus norvegicus domestica - Long Evans
-sub-Rizzo	Rattus norvegicus domestica - Long Evans
-sub-Splinter	Rattus norvegicus domestica - Long Evans
-sub-Templeton	Rattus norvegicus domestica - Long Evans
+participant_id	original_participant_id	species
+sub-BWRat17	sub-BWRat17	Rattus norvegicus domestica - Long Evans
+sub-BWRat18	sub-BWRat18	Rattus norvegicus domestica - Long Evans
+sub-BWRat19	sub-BWRat19	Rattus norvegicus domestica - Long Evans
+sub-BWRat20	sub-BWRat20	Rattus norvegicus domestica - Long Evans
+sub-BWRat21	sub-BWRat21	Rattus norvegicus domestica - Long Evans
+sub-Bogey	sub-Bogey	Rattus norvegicus domestica - Long Evans
+sub-Dino	sub-Dino	Rattus norvegicus domestica - Long Evans
+sub-Rizzo	sub-Rizzo	Rattus norvegicus domestica - Long Evans
+sub-Splinter	sub-Splinter	Rattus norvegicus domestica - Long Evans
+sub-Templeton	sub-Templeton	Rattus norvegicus domestica - Long Evans
